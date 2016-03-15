@@ -1,3 +1,3 @@
 CFLAGS:=-lm
 
-fibonacci: main.c fibonacci.c integral.c
+ep1: ep1.c fibonacci.c integral.c
