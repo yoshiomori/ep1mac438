@@ -1,1 +1,1 @@
-int fibonacci(int);
+void printFibonacci(int);

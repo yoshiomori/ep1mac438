@@ -1,1 +1,1 @@
-void integral();
+void integral(int);
