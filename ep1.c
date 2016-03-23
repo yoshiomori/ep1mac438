@@ -44,7 +44,7 @@ int main(int argc, char **argv) {
 						integral(s);
 						printf("P4: Encerrando o P4\n");
 					}
-					else {
+					else { /* Pai */
 						printf("P0: Começando a espera do Programa Principal\n");
 						for (i = 0; i < 4; i++) {
 							wait(&status);
