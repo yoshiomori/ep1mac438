@@ -9,7 +9,7 @@
 void ordenacao(int m) {
 	int *numeros, i;
 	
-  srand(seed);
+	srand(seed);
 	numeros = malloc(sizeof(int) * m);
 
 	for (i = 0; i < m; i++) {
