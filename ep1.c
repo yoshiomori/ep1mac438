@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
 		else {
 			if (fork() == 0) { /* Segundo Filho */
 				printf("P2: Iniciando P2\n");
-	    		printFibonacci(n);
+				printFibonacci(n);
 				printf("P2: Encerrando o P2\n");
 			}	
 			else {
