@@ -1,3 +1,18 @@
+/*******************************************************************/
+/**   MAC 438  - Programação Concorrente                          **/
+/**   IME-USP  - Primeiro Semestre de 2016                        **/
+/**   Prof. Marcel Parolin Jackowski                              **/
+/**                                                               **/
+/**   Primeiro Exercício-Programa                                 **/
+/**   Arquivo: heapsort.c                                         **/
+/**                                                               **/
+/**   Ronaldo Yang                   7576750                      **/
+/**   Yoshio Mori                    6432393                      **/
+/**                                                               **/
+/**   04/04/2016                                                  **/
+/**   Bibliografia:                                               **/
+/*******************************************************************/
+
 int max (int *a, int n, int i, int j, int k) {
     int m = i;
     if (j < n && a[j] > a[m]) {
