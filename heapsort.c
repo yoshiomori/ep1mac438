@@ -37,10 +37,10 @@ void sink(int *a, int k, int n) {
 
 void heapsort(int n, int *a) { 
 	int k;
-  for (k = n/2; k >= 1; k--) sink(a, k, n);
-    while (n > 1) { 
-			exch(a, 1, n--); 
-      sink(a, 1, n); 
-		}
+	for (k = n/2; k >= 1; k--) sink(a, k, n);
+	while (n > 1) { 
+		exch(a, 1, n--); 
+		sink(a, 1, n); 
+	}
 }
  
