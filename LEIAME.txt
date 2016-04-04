@@ -4,43 +4,18 @@
 /**   Prof. Marcel Parolin Jackowski                              **/
 /**                                                               **/
 /**   Primeiro Exercício-Programa                                 **/
-/**   Arquivo: heapsort.c                                         **/
+/**   Arquivo: LEIAME.txt                                         **/
 /**                                                               **/
 /**   Ronaldo Yang                   7576750                      **/
 /**   Yoshio Mori                    6432393                      **/
 /**                                                               **/
 /**   04/04/2016                                                  **/
-/**   Referência: http://algs4.cs.princeton.edu/24pq/             **/
 /*******************************************************************/
 
-int less(int *a, int i, int j) {
-	return (a[i-1] < a[j-1]) ? 1 : 0;
-}
-
-void exch(int *a, int i, int j) {
-	int c;
-	c = a[i-1];
-	a[i-1] = a[j-1];
-	a[j-1] = c;
-}
-
-void sink(int *a, int k, int n) { 
-	int j;
-	while (2*k <= n) { 
-		j = 2*k;
-		if (j < n && less(a, j, j+1)) j++;
-		if (!less(a, k, j)) break;
-		exch(a, k, j); 
-		k = j;
-	}
-}
-
-void heapsort(int n, int *a) { 
-	int k;
-  for (k = n/2; k >= 1; k--) sink(a, k, n);
-    while (n > 1) { 
-			exch(a, 1, n--); 
-      sink(a, 1, n); 
-		}
-}
- 
+- Para P1, utilizamos a seguinte referência para a implementação do heapsort:
+	- Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne 
+	- Mais precisamente: http://algs4.cs.princeton.edu/24pq/
+- Essa referência foi utilizada no curso de Estrutura de Dados e usamos a mesma para relembrar como algoritmo funciona.
+- Na impressão do nosso EP as siglas abaixo significam:
+	- P0 : Processo pai.
+	- Px : Processo filho x e cada um representa o que foi pedido. 
